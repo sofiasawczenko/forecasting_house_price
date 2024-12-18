@@ -10,9 +10,9 @@ The data for this project was extracted from the Kaggle dataset. It contains per
 
 Real estate prices in Boston can be influenced by a multitude of factors, from location and size to local market trends. In this project, I utilized supervised regression learning, a technique where a model learns from labeled data and analyzes the relationship between variables for accurate predictions. The goal is to model this relationship and make precise estimations based on the data.
 
-## Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
-### Dataset Overview
+## Dataset Overview
 
 The dataset contains the following columns:
 - **RM**: Average number of rooms per house in the neighborhood.
@@ -20,7 +20,7 @@ The dataset contains the following columns:
 - **PTRATIO**: Ratio of students to teachers in schools in the neighborhood.
 - **MEDV**: Median value of owner-occupied homes (target variable).
 
-### Dataset
+## Dataset
 ```python
 df.shape
 # Output: (489, 4)
@@ -38,7 +38,7 @@ df.describe()
 ```
 ![image](https://github.com/user-attachments/assets/5c720765-eba2-4af3-975f-bafe4236a58c)
 
-### Data Exploration and Preprocessing
+## Data Exploration and Preprocessing
 **1. Statistical Analysis:**
 - Summary statistics for all features were analyzed.
 - Relationships between features were visualized using scatter plots and heatmaps.
@@ -53,7 +53,7 @@ df.describe()
 **4. Correlation:**
 - Pearson, Spearman, and Kendall correlation methods were applied to study feature relationships.
 
-### Models Developed
+## Models Developed
 **1. Simple Linear Regression**
 - Example: Predicting house price (MEDV) using the average number of rooms (RM).
 - Performance:
@@ -89,10 +89,10 @@ RMSE: ~96,087
 ## Tools and Libraries
 - Python: Core programming language.
 - Libraries:
-   **NumPy, Pandas** for data handling.
-   **Matplotlib, Seaborn, Plotly** for visualization.
-   **Scikit-learn** for machine learning algorithms.
-   **SciPy, Statsmodels** for statistical analysis.
+   - **NumPy, Pandas** for data handling.
+   - **Matplotlib, Seaborn, Plotly** for visualization.
+   - **Scikit-learn** for machine learning algorithms.
+   - **SciPy, Statsmodels** for statistical analysis.
 
 ## Conclusion
 The models demonstrate that house prices in Boston are influenced by various factors, with multiple regression providing the most accurate predictions. Further refinements can include feature engineering, hyperparameter tuning, and exploring advanced models like Random Forest or Gradient Boosting.
